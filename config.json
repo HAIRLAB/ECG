@@ -1,0 +1,34 @@
+{
+    "disease_num": 21,
+    "conv_filter_size": 15,
+    "conv_num_filters": [64, 128, 256, 512],
+    "identity_block_num": [1, 1, 1, 1],
+    "conv_init": "he_normal",
+    "dropout": 0.6,
+    "leaky_relu": 0.1,
+    "dense_neurons": 512,
+
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "l2": 0.01,
+
+    "ecg_root_path": "/mnt/data/ECG_data/ECG/",
+    
+    "multilabel_save_folder": "/mnt/data/ECG_data/multilabel_new/",
+    "multilabel_data_folder": "/mnt/data/ECG_data/multilabel_new/data/",
+    "multilabel_label_folder": "/mnt/data/ECG_data/multilabel_new/label/",
+    "multilabel_cardiologist_test_data": "/mnt/data/ECG_data/multilabel_test/data/",
+    "multilabel_cardiologist_test_label": "/mnt/data/ECG_data/multilabel_test/label/",
+    
+    "multiclass_save_folder": "/mnt/data/ECG_data/multiclass/",
+    "multiclass_data_folder": "/mnt/data/ECG_data/multiclass/data/",
+    "multiclass_label_folder": "/mnt/data/ECG_data/multiclass/label/",
+    "multiclass_cardiologist_test_data": "/mnt/data/ECG_data/multiclass_test/data/",
+    "multiclass_cardiologist_test_label": "/mnt/data/ECG_data/multiclass_test/label/",
+    
+    "abbr_list": ["Normal", "ST", "SB", "PAC", "AR", "AT", "AFlutter", "AFib", "PJC", "JR", "PSVT", "PVC", "IVR", "VT", "AAPR", "AVPR", "LBBB", "1st Deg AVB", "Mobitz I AVB", "WPW-B", "WPW-A"],
+    
+    "gpu":2,
+    
+    "n_folds": 5
+}
